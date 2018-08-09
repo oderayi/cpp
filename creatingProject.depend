@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1533844360 source:/Users/steven/Playground/C++/creatingProject/src/MyStack.cpp
+	"MyStack.h"
+
+1533844470 /Users/steven/Playground/C++/creatingProject/include/MyStack.h
+
+1533844583 source:/Users/steven/Playground/C++/creatingProject/main.cpp
+	<iostream>
+	<bits/stdc++.h>
+	<MyStack.h>
+
