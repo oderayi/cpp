@@ -2,7 +2,7 @@
 1534868272 source:/Users/steven/Playground/C++/creatingProject/src/MyStack.cpp
 	"MyStack.h"
 
-1533844470 /Users/steven/Playground/C++/creatingProject/include/MyStack.h
+1534879220 /Users/steven/Playground/C++/creatingProject/include/MyStack.h
 
 1534878745 source:/Users/steven/Playground/C++/creatingProject/main.cpp
 	<iostream>
@@ -22,4 +22,20 @@
 1534878564 source:/Users/steven/Playground/C++/creatingProject/src/SyntaxParser.cpp
 	"SyntaxParser.h"
 	"iostream"
+
+1533890300 source:c:\playground\c++ projects\cpp\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+	<MyStack.h>
+
+1533890300 c:\playground\c++ projects\cpp\include\mystack.h
+
+1533890300 source:c:\playground\c++ projects\cpp\src\mystack.cpp
+	"MyStack.h"
+
+1533891142 source:c:\playground\c++ projects\cpp\src\countsort.cpp
+	"CountSort.h"
+
+1533891125 c:\playground\c++ projects\cpp\include\countsort.h
+	<bits/stdc++.h>
 
