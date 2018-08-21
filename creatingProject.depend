@@ -1,11 +1,25 @@
 # depslib dependency file v1.0
-1533844360 source:/Users/steven/Playground/C++/creatingProject/src/MyStack.cpp
+1534868272 source:/Users/steven/Playground/C++/creatingProject/src/MyStack.cpp
 	"MyStack.h"
 
 1533844470 /Users/steven/Playground/C++/creatingProject/include/MyStack.h
 
-1533844583 source:/Users/steven/Playground/C++/creatingProject/main.cpp
+1534878745 source:/Users/steven/Playground/C++/creatingProject/main.cpp
 	<iostream>
 	<bits/stdc++.h>
 	<MyStack.h>
+	<SyntaxParser.h>
+
+1534872300 /Users/steven/Playground/C++/creatingProject/include/CharStack.h
+
+1534877830 source:/Users/steven/Playground/C++/creatingProject/src/CharStack.cpp
+	"CharStack.h"
+
+1534877809 /Users/steven/Playground/C++/creatingProject/include/SyntaxParser.h
+	"CharStack.h"
+	<string>
+
+1534878564 source:/Users/steven/Playground/C++/creatingProject/src/SyntaxParser.cpp
+	"SyntaxParser.h"
+	"iostream"
 

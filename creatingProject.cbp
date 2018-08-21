@@ -34,9 +34,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="data.in" />
+		<Unit filename="data.out" />
+		<Unit filename="include/CharStack.h" />
 		<Unit filename="include/MyStack.h" />
+		<Unit filename="include/SyntaxParser.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/CharStack.cpp" />
 		<Unit filename="src/MyStack.cpp" />
+		<Unit filename="src/SyntaxParser.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
