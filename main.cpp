@@ -1,10 +1,10 @@
-#include <iostream>
-#include <bits/stdc++.h>
-#include <MyStack.h>
-#include <MyQueue.h>
-#include <SyntaxParser.h>
-#include <BinarySearch.h>
-
+#include "iostream"
+#include "bits/stdc++.h"
+#include "MyStack.h"
+#include "MyQueue.h"
+#include "SyntaxParser.h"
+#include "BinarySearch.h"
+#include "MarsTrickery.h"
 
 using namespace std;
 
@@ -15,29 +15,65 @@ void testStack();
 void testParser();
 void testQueue();
 void testBinarySearch();
+void spojBinarySearch();
+void testMarsTrickery();
 
 int main()
 {
     //testStack();
     //testParser();
     //testQueue();
-    testBinarySearch();
+    //testBinarySearch();
+    spojBinarySearch();
+    //testMarsTrickery();
 
     return 0;
+}
+
+void testMarsTrickery(){
+    MarsTrickery marsTrickery;
+
+    int items[] = { 1, 98, 3, 7, 4, 9, 3, 7, 10, 29, 83, 47, 58, 29, 45, 75, 938, 85, 73, 26 };
+
+    marsTrickery.setItems(items);
+
+    marsTrickery.add(0, 5, 6);
+    marsTrickery.print();
+}
+
+void spojBinarySearch(){
+    BinarySearch binarySearch;
+
+    int n, q;
+
+    cout << "Enter number of items and number of queries: ";
+    cin >> n >> q;
+    int items[n], queries[q];
+
+    cout << "Enter items, one per line: " << endl;
+    for(int i = 0; i < n; i++){
+        cin >> items[i];
+    }
+
+    cout << "Enter queries, one per line: " << endl;
+    for(int i = 0; i < q; i++){
+        cin >> queries[i];
+    }
+
+    int firstPos;
+
+    for(int i = 0; i < q; i++){
+      firstPos = binarySearch.searchFirst(items, n, queries[i]);
+      cout << "First occurence of " << queries[i] << " is " << firstPos << endl;
+    }
 }
 
 void testBinarySearch(){
     BinarySearch binarySearch;
 
-    int n, x;
+    int n = 22, x;
 
-    f >> n;
-
-    int items[n];
-
-    for(int i = 0; i < n; i++){
-        f >> items[i];
-    }
+    int items[] = { 1, 3, 3, 4, 7, 7, 9, 10, 26, 29, 29, 45, 47, 58, 73, 75, 83, 85, 98, 938, 938, 938 };
 
     cout << "Enter the number to search for: ";
 
@@ -46,8 +82,14 @@ void testBinarySearch(){
     int pos = binarySearch.search(items, n, x);
 
     if(pos == -1) cout << "Item " << x << " was not found." << endl;
-    else cout << "Item " << x << " was found in position " << pos << endl;
+    else {
+        int firstPos = binarySearch.searchFirst(items, n, x);
+        int lastPos = binarySearch.searchLast(items, n, x);
 
+        cout << "Item " << x << " was found at position " << pos << endl;
+        cout << "First occurence was found at position " << firstPos << endl;
+        cout << "Last occurence was found at position " << lastPos << endl;
+    }
 }
 
 void testQueue(){

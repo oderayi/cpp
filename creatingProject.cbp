@@ -38,12 +38,14 @@
 		<Unit filename="data.out" />
 		<Unit filename="include/BinarySearch.h" />
 		<Unit filename="include/CharStack.h" />
+		<Unit filename="include/MarsTrickery.h" />
 		<Unit filename="include/MyQueue.h" />
 		<Unit filename="include/MyStack.h" />
 		<Unit filename="include/SyntaxParser.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/BinarySearch.cpp" />
 		<Unit filename="src/CharStack.cpp" />
+		<Unit filename="src/MarsTrickery.cpp" />
 		<Unit filename="src/MyQueue.cpp" />
 		<Unit filename="src/MyStack.cpp" />
 		<Unit filename="src/SyntaxParser.cpp" />
